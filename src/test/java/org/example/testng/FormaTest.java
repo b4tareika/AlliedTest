@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class FormaTest {
+
     public static WebDriver driver;
 
      @BeforeClass
