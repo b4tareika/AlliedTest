@@ -14,7 +14,7 @@ public class FormaPage {
     private WebElement lastNameElement;
     @FindBy(id="userEmail")
     private WebElement userEmailElement;
-    @FindBy(id = "Mobile Number")
+    @FindBy(id = "userNumber")
     private WebElement numberElement;
     @FindBy(id = "gender-radio-1")
     private WebElement genderElement;

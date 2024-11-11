@@ -46,6 +46,7 @@ public class FormaTest {
         form.setNumberElement(Basic.MOBILE);
         Thread.sleep(2000);
         form.setSportHobbie();
+        Thread.sleep(2000);
 
     }
      @AfterClass
