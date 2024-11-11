@@ -39,14 +39,14 @@ public class FormaPage {
         userEmailElement.sendKeys(EmailPar);
         return EmailPar;
     }
+    public void setMailGender(){
+        genderElement.sendKeys(" ");
+    }
     public String setNumberElement(String NumberPar) {
         numberElement.sendKeys(NumberPar);
         return NumberPar;
     }
-    public void setMailGender(){
-        genderElement.sendKeys(" ");
-    }
-    public void setHobbiesElement(){
+    public void setSportHobbie(){
         hobbiesElement.sendKeys(" ");
     }
 
