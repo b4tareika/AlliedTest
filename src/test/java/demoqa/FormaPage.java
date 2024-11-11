@@ -6,14 +6,36 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FormaPage {
-    @FindBy(id="firstname")
-    private WebElement firstnamel;
+    public static WebDriver driver;
+
+    @FindBy(id="firstName")
+    private WebElement firstNameElement;
+    @FindBy(id="lastName")
+    private WebElement lastNameElement;
+    @FindBy(id="userEmail")
+    private WebElement userEmailElement;
 
     public FormaPage(WebDriver driver) {
         FormaPage.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(FormaPage.driver, this);
     }
-    public void setFirstnamel
+
+    public String setFirstNameElement(String FirstNamePar) {
+        firstNameElement.sendKeys(FirstNamePar);
+        return FirstNamePar;
+    }
+    public String setLastNameElement(String LastNamePar) {
+        lastNameElement.sendKeys(LastNamePar);
+        return LastNamePar;
+    }
+    public String setEmailElement(String EmailPar) {
+        userEmailElement.sendKeys(EmailPar);
+        return EmailPar;
+    }
+    public String setGenderElement(String GenderPar) {
+        firstNameElement.sendKeys(GenderPar);
+        return GenderPar;
+    }
 }
 
 
