@@ -11,7 +11,7 @@ public class Basic {
     public static String EMAIL = "deniperu@gmail.com" ;
     public static String MOBILE = "069893098";
     public static String DATE_OF_BIRTH = "Cebotarescu";
-    public static String HOBBIS = "Cebotarescu";
+    public static String SUBJECT = "Cebotarescu";
     public static String STATE = "Chisinau";
     public static String CITY = "Chisinau";
     public static Logger logger = Logger.getLogger(Basic.class);

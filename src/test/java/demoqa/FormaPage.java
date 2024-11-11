@@ -20,6 +20,8 @@ public class FormaPage {
     private WebElement genderElement;
     @FindBy(id = "hobbies-checkbox-1")
     private WebElement hobbiesElement;
+    @FindBy(id = "subjectsContainer")
+    private WebElement subjectElement;
 
 
     public FormaPage(WebDriver driver) {
@@ -48,6 +50,10 @@ public class FormaPage {
     }
     public void setSportHobbie(){
         hobbiesElement.sendKeys(" ");
+    }
+    public String setSubjectElement(String SubjectPar) {
+        subjectElement.sendKeys(SubjectPar);
+        return SubjectPar;
     }
 
 }
