@@ -12,18 +12,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.JavascriptExecutor;
 
+import static org.example.basic.SeleniumDriver.getRemoteDriver;
+
 public class FormaTest {
 
     public static WebDriver driver;
 
      @BeforeClass
     public void beforeClass() {
-         System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
-         ChromeOptions options = new ChromeOptions();
-         options.addArguments("--remote-allow--origins=*");
-         WebDriver driver = new ChromeDriver(options);
-         driver.manage().window().maximize();
-
+//         System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
+//         ChromeOptions options = new ChromeOptions();
+//         options.addArguments("--remote-allow--origins=*");
+//         WebDriver driver = new ChromeDriver(options);
+//         driver.manage().window().maximize();
+            driver = getRemoteDriver();
      }
 
 

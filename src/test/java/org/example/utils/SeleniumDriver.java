@@ -1,5 +1,7 @@
 package org.example.basic;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -16,7 +18,7 @@ public class SeleniumDriver {
         System.setProperty("webdriver.chrome.driver", "D:\\WebDriver\\chromedriver-win64\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver(options);
 //        driver = WebDriverManager.chromedriver().create();
 //        WebDriverManager.chromedriver().clearDriverCache().setup();
         return driver;
