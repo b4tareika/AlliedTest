@@ -42,7 +42,7 @@ public class FormaPage {
         return NumberPar;
     }
     public void setMailGender(){
-        genderElement.click();
+        genderElement.sendKeys(" ");
     }
 
 }
