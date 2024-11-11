@@ -30,12 +30,16 @@ public class FormaTest {
 
 
     @Test
-    public void FormaTest() {
+    public void FormaTest() throws InterruptedException {
         driver.get("https://demoqa.com/automation-practice-form");
         FormaPage form = new FormaPage(driver);
+        Thread.sleep(2000);
         form.setFirstNameElement(Basic.FIRST_NAME);
+        Thread.sleep(2000);
         form.setLastNameElement(Basic.LAST_NAME);
+        Thread.sleep(2000);
         form.setEmailElement(Basic.EMAIL);
+        Thread.sleep(2000);
     }
      @AfterClass
      public void teardown(){
