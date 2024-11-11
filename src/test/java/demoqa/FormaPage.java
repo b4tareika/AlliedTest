@@ -14,10 +14,12 @@ public class FormaPage {
     private WebElement lastNameElement;
     @FindBy(id="userEmail")
     private WebElement userEmailElement;
-    @FindBy(id = "userNumber")
+    @FindBy(id = "Mobile Number")
     private WebElement numberElement;
     @FindBy(id = "gender-radio-1")
     private WebElement genderElement;
+    @FindBy(id = "hobbies-checkbox-1")
+    private WebElement hobbiesElement;
 
 
     public FormaPage(WebDriver driver) {
@@ -43,6 +45,9 @@ public class FormaPage {
     }
     public void setMailGender(){
         genderElement.sendKeys(" ");
+    }
+    public void setHobbiesElement(){
+        hobbiesElement.sendKeys(" ");
     }
 
 }

@@ -44,6 +44,8 @@ public class FormaTest {
         form.setMailGender(); ;
         Thread.sleep(2000);
         form.setNumberElement(Basic.MOBILE);
+        Thread.sleep(2000);
+        form.setHobbiesElement();
 
     }
      @AfterClass
