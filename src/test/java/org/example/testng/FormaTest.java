@@ -26,6 +26,7 @@ public class FormaTest {
 //         WebDriver driver = new ChromeDriver(options);
 //         driver.manage().window().maximize();
             driver = getRemoteDriver();
+
      }
 
 
@@ -40,7 +41,7 @@ public class FormaTest {
         Thread.sleep(2000);
         form.setEmailElement(Basic.EMAIL);
         Thread.sleep(2000);
-        form.setGenderElement (Basic.GENDER);
+        form.setMailGender(); ;
         Thread.sleep(2000);
 
     }

@@ -14,6 +14,8 @@ public class FormaPage {
     private WebElement lastNameElement;
     @FindBy(id="userEmail")
     private WebElement userEmailElement;
+    @FindBy(id = "gender-radio-1")
+    private WebElement genderElement;
 
     public FormaPage(WebDriver driver) {
         FormaPage.driver = driver;
@@ -32,9 +34,8 @@ public class FormaPage {
         userEmailElement.sendKeys(EmailPar);
         return EmailPar;
     }
-    public String setGenderElement(String GenderPar) {
-        firstNameElement.sendKeys(GenderPar);
-        return GenderPar;
+    public void setMailGender() {
+        genderElement.sendKeys( "");
     }
 }
 
