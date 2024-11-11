@@ -40,6 +40,9 @@ public class FormaTest {
         Thread.sleep(2000);
         form.setEmailElement(Basic.EMAIL);
         Thread.sleep(2000);
+        form.setGenderElement (Basic.GENDER);
+        Thread.sleep(2000);
+
     }
      @AfterClass
      public void teardown(){
