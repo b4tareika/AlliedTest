@@ -43,6 +43,7 @@ public class FormaTest {
         Thread.sleep(2000);
         form.setMailGender(); ;
         Thread.sleep(2000);
+        form.setNumberElement(Basic.MOBILE);
 
     }
      @AfterClass
