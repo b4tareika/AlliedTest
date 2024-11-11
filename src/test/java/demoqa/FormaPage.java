@@ -51,10 +51,10 @@ public class FormaPage {
     public void setSportHobbie(){
         hobbiesElement.sendKeys(" ");
     }
-    public String setSubjectElement(String SubjectPar) {
-        subjectElement.sendKeys(SubjectPar);
-        return SubjectPar;
-    }
+//    public String setSubjectElement(String SubjectPar) {
+//        subjectElement.sendKeys(SubjectPar);
+//        return SubjectPar;
+//    }
 
 }
 

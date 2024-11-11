@@ -51,31 +51,31 @@ public class FormaTest {
         Thread.sleep(2000);
         form.setSportHobbie();
         Thread.sleep(2000);
-        form.setSubjectElement(Basic.SUBJECT);
+//        form.setSubjectElement(Basic.SUBJECT);
 
 
     }
-//    public void selectDate(String month, String year, String day) {
-//        // Откроем календарь
-//        WebElement dateInput = driver.findElement(By.className("react-datepicker__input-container"));
-//        dateInput.click();
-//
-//        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("react-datepicker")));
-//
-//        // Выберем месяц
-//        WebElement monthDropdown = driver.findElement(By.className("react-datepicker__month-select"));
-//        monthDropdown.sendKeys(month);
-//
-//        // Выберем год
-//        WebElement yearDropdown = driver.findElement(By.className("react-datepicker__year-select"));
-//        yearDropdown.sendKeys(year);
-//
-//        // Кликнем на нужный день
-//        WebElement dateElement = driver.findElement(By.xpath("//div[contains(@class, 'react-datepicker__day') and text()='" + day + "']"));
-//        dateElement.click();
-//        selectDate("April", "2004", "15");
-//    }
+    public void selectDate(String month, String year, String day) {
+        // Откроем календарь
+        WebElement dateInput = driver.findElement(By.className("react-datepicker__input-container"));
+        dateInput.click();
+
+        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("react-datepicker")));
+
+        // Выберем месяц
+        WebElement monthDropdown = driver.findElement(By.className("react-datepicker__month-select"));
+        monthDropdown.sendKeys(month);
+
+        // Выберем год
+        WebElement yearDropdown = driver.findElement(By.className("react-datepicker__year-select"));
+        yearDropdown.sendKeys(year);
+
+        // Кликнем на нужный день
+        WebElement dateElement = driver.findElement(By.xpath("//div[contains(@class, 'react-datepicker__day') and text()='" + day + "']"));
+        dateElement.click();
+        selectDate("April", "2004", "15");
+    }
      @AfterClass
      public void teardown(){
          driver.quit();
