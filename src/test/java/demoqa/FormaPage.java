@@ -22,7 +22,8 @@ public class FormaPage {
     private WebElement hobbiesElement;
     @FindBy(id = "subjectsContainer")
     private WebElement subjectElement;
-
+    @FindBy (id = "currentAddress")
+    private WebElement currentAddressElement;
 
     public FormaPage(WebDriver driver) {
         FormaPage.driver = driver;
@@ -55,6 +56,10 @@ public class FormaPage {
 //        subjectElement.sendKeys(SubjectPar);
 //        return SubjectPar;
 //    }
+    public String setCurrentAddressElement(String CurrentAddressPar) {
+        currentAddressElement.sendKeys(CurrentAddressPar);
+        return CurrentAddressPar;
+    }
 
 }
 

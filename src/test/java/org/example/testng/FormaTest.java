@@ -51,12 +51,15 @@ public class FormaTest {
         Thread.sleep(2000);
         form.setSportHobbie();
         Thread.sleep(2000);
+        form.setCurrentAddressElement(Basic.ADRESS);
+        Thread.sleep(2000);
 //        form.setSubjectElement(Basic.SUBJECT);
 
 
     }
     public void selectDate(String month, String year, String day) throws InterruptedException {
         // Откроем календарь
+        selectDate("April", "2004", "15");
         WebElement dateInput = driver.findElement(By.className("react-datepicker__input-container"));
         dateInput.click();
 
@@ -74,7 +77,7 @@ public class FormaTest {
         // Кликнем на нужный день
         WebElement dateElement = driver.findElement(By.xpath("//div[contains(@class, 'react-datepicker__day') and text()='" + day + "']"));
         dateElement.click();
-        selectDate("April", "2004", "15");
+
         Thread.sleep(2000);
     }
      @AfterClass
